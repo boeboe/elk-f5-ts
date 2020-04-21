@@ -19,7 +19,7 @@ The get the proper docker command startup flags, please refer to the original do
 
 ## Modifications
 
-The default docker images contain a Logstash chain for Beats and Nginx. This forked container removes the default Logstash chain and inject an F5 Telemetry Streaming specific Logstash chain
+The default docker images contain a Logstash chain for Beats and Nginx. This forked container removes the default Logstash chain and injects an F5 Telemetry Streaming specific Logstash chain
 
 The default location of the Logstash chain configuration is `/etc/logstash/conf.d`
 
