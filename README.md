@@ -106,3 +106,6 @@ Server for the full end-to-end scenario
 
  - https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/declarations/profiles.html#using-a-traffic-log-profile-in-a-declaration
 
+## Note
+
+This container is purely used for demo purposes and not meant for production environments at all
