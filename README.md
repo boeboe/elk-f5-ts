@@ -71,7 +71,7 @@ output {
 }
 ```
 
-**Note:** This index and document type need to match the below example configuration for the
+**Note:** This `index` and `document_type` need to match the below example configuration for the
 F5 TS Elasticsearch Consumer Configuration
 
 ## Background
