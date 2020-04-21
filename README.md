@@ -10,6 +10,14 @@ This is a fork from the ELK all in one docker containers found on
   
 They include a fully containerized **Logstash**, **ElasticSearch** and **Kibana** stack
 
+The docker container and sources after the below described modifications can be found on
+
+ - https://github.com/boeboe/elk-f5-ts
+ - https://hub.docker.com/repository/docker/boeboe/elk-f5-ts
+
+The get the proper docker command startup flags, please refer to the original documentation,
+as nothing has changed here
+
 ## Modifications
 
 The default docker images contain a Logstash chain for Beats and Nginx. This forked
@@ -34,7 +42,7 @@ input {
 ### Filter
 
 We enrich the `data.client_ip` field in the original F5 BIG-IP Elasticsearch data with
-**GeoLocation** data for Kibana dashboarding. More innformation on the GeoIP filter can
+**GeoLocation** data for Kibana dashboarding. More information on the GeoIP filter can
 be found [here](https://www.elastic.co/guide/en/logstash/current/plugins-filters-geoip.html)
 
 We also remove the extra `headers` added by the http input plugin and make sure the `@timestamp` field matches the `data.event_timestamp` from the original data (this matches the HTTP timstamp of the traffic on the wire going through BIG-IP)
